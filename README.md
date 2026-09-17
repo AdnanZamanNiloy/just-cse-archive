@@ -2,7 +2,7 @@
 
 Personal long-term archive of university CSE coursework, study materials, laboratory work, and independent academic projects.
 
-The archive preserves the original project files and nested Git repositories. Only outer folder names, locations, and archive documentation were changed to make the collection easier to navigate.
+The archive preserves the original project files and documentation. The projects are stored as folders inside this single archive repository; outer folder names, locations, and archive documentation were organized to make the collection easier to navigate.
 
 ## Contents
 
