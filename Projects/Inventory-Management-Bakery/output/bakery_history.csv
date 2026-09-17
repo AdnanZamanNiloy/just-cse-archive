@@ -1,0 +1,6 @@
+day,revenue,sales_Bread,sales_Cake,sales_Donut,sales_Cookie,inv_flour,inv_yeast,inv_water,inv_sugar,inv_eggs,inv_oil,inv_butter,restocked
+1,360.0,3,0,4,2,3980,2185,4700,1860,2100,940,770,"yeast,eggs"
+2,800.0,2,4,2,1,2170,2175,4500,1390,2088,910,555,
+3,720.0,6,2,2,4,2010,2145,3900,1030,2082,880,2395,"flour,butter"
+4,830.0,3,2,5,8,2010,2130,3600,2490,2076,805,2175,"flour,sugar"
+5,500.0,1,2,2,3,900,2125,3500,2160,2070,775,2030,

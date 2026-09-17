@@ -1,0 +1,134 @@
+# JUST Hall Office
+
+JUST Hall Office is a full-stack hall management platform that combines a modern web frontend with a .NET 8 backend and MySQL database. It supports hall office operations such as student applications, seat management, notices, payments, and profile workflows in a single workspace.
+
+## Overview
+
+The repository is organized as a two-part solution:
+
+- Just-Hall/backend contains the ASP.NET Core Web API that exposes authentication, application, seat, payment, notice, and user management endpoints.
+- Just-Hall/frontend contains the Next.js application used by students and staff to interact with the hall portal.
+
+The backend uses JWT authentication, Entity Framework Core, and MySQL. The frontend is built with Next.js 15, React 19, TypeScript, and Tailwind CSS.
+
+## Key Capabilities
+
+- User registration, login, and profile management
+- Hall seat application and allocation workflows
+- Payment submission and receipt handling
+- Notice publishing and board viewing
+- Staff and admin portal pages for operational tasks
+- API-driven architecture with Swagger documentation in development
+
+## Technology Stack
+
+- Backend: ASP.NET Core Web API, Entity Framework Core, JWT, Swagger/OpenAPI
+- Database: MySQL
+- Frontend: Next.js 15, React 19, TypeScript, Tailwind CSS
+- File storage: Local media folders for profile photos, payment slips, and receipts
+
+## Repository Structure
+
+```text
+JUST_Hall_Office/
+├── JUST_Hall_Office.sln
+├── README.md
+└── Just-Hall/
+    ├── backend/
+    │   ├── Controllers/
+    │   ├── Data/
+    │   ├── DTOs/
+    │   ├── Helpers/
+    │   ├── Migrations/
+    │   ├── Models/
+    │   ├── Services/
+    │   └── Program.cs
+    ├── frontend/
+    │   ├── src/
+    │   └── public/
+    ├── PAYMENT_SYSTEM_INTEGRATION.md
+    ├── PAYMENT_TESTING_GUIDE.md
+    └── SEAT_MANAGEMENT_GUIDE.md
+```
+
+## Prerequisites
+
+Before running the project, make sure the following tools are installed:
+
+- .NET 8 SDK
+- Node.js 20+ and npm
+- MySQL Server
+- Visual Studio 2022 or VS Code
+
+## Getting Started
+
+### 1. Clone or open the repository
+
+Open the workspace root: JUST_Hall_Office
+
+### 2. Configure the backend
+
+Update connection and JWT settings in Just-Hall/backend/appsettings.json if needed.
+
+Important settings typically include:
+
+- MySQL connection string
+- JWT issuer, audience, and signing key
+- CORS origins for the frontend
+
+Then run the backend:
+
+```powershell
+cd Just-Hall/backend
+dotnet restore
+dotnet run
+```
+
+The API is available at http://localhost:8000 in development, and Swagger is available at http://localhost:8000/swagger.
+
+### 3. Configure the frontend
+
+Install dependencies and start the Next.js app:
+
+```powershell
+cd Just-Hall/frontend
+npm install
+npm run dev
+```
+
+The frontend runs on http://localhost:3000 by default.
+
+## Backend Notes
+
+The API exposes controllers for users, applications, notices, seats, and payments. Media assets are served from the backend media directory, and JWT authentication protects the relevant endpoints.
+
+If you are setting up a fresh database, review the SQL scripts and migration files in Just-Hall/backend before running the application.
+
+## Frontend Notes
+
+The frontend uses the App Router and includes pages for the public site, notice board, office area, hall portal, profile management, and payment-related flows. It communicates with the backend through the API layer under src/lib and route handlers under src/app/api.
+
+## Documentation
+
+Useful project references are already included in the repository:
+
+- Just-Hall/backend/SETUP_GUIDE.md
+- Just-Hall/backend/QUICKSTART.md
+- Just-Hall/backend/TESTING_GUIDE.md
+- Just-Hall/backend/MIGRATION_GUIDE.md
+- Just-Hall/PAYMENT_SYSTEM_INTEGRATION.md
+- Just-Hall/PAYMENT_TESTING_GUIDE.md
+- Just-Hall/SEAT_MANAGEMENT_GUIDE.md
+
+## Development Workflow
+
+Typical local workflow:
+
+1. Start MySQL and confirm the database is available.
+2. Run the backend API.
+3. Run the frontend development server.
+4. Use Swagger or the UI to verify login, notices, applications, seats, and payments.
+
+## License
+
+Refer to the original project documentation or repository policy for licensing details.

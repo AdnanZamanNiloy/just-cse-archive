@@ -1,0 +1,27 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE metadata
+.vscode/
+.idea/
+.vs/
+
+# Build output and generated files
+bin/
+obj/
+Debug/
+Release/
+*.user
+*.suo
+*.userprefs
+*.lock
+*.log
+*.tmp
+*.bak
+*~
+
+# Python cache
+__pycache__/
+*.py[cod]
