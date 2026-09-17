@@ -59,16 +59,3 @@ Project-specific READMEs provide additional details when available. Notebook pro
 - `semester-3-2/`
 - `semester-4-1/`
 
-Four oversized book PDFs remain preserved locally but are excluded from the GitHub commit because GitHub rejects files larger than 100 MB. Their exact paths are listed in the root `.gitignore`. The rest of the Books collection is included in the archive repository.
-
-## Preservation and duplicate policy
-
-- Source code, datasets, notebooks, documentation, images, and nested Git metadata are retained.
-- Exact duplicate build and IDE-support files may occur inside separate technical demonstrations because each demonstration is a separate project.
-- The duplicated AIS-3201 subtree found inside the CSE-3203 Books folder was removed after byte-for-byte comparison; the canonical AIS-3201 copy was retained.
-- Source or project files were not removed when their location was meaningful to a separate project, even if their content matched another project file.
-- Generated cache directories such as `__pycache__/`, `bin/`, `obj/`, and `.vs/` are not considered academic source duplicates.
-
-## Privacy note
-
-The face-recognition project contains images that may show identifiable people, attendance data, and trained model artifacts. Review consent, access permissions, and distribution requirements before publishing this archive.
